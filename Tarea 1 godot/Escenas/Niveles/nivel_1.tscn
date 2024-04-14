@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4gtp08rlhs07"]
+
+[ext_resource type="PackedScene" uid="uid://jgbe7s0u03ah" path="res://Escenas/Personaje/Personaje.tscn" id="1_ouxkn"]
+[ext_resource type="PackedScene" uid="uid://b73vlehnkumfw" path="res://Escenas/Estructuras/Estructuras.tscn" id="2_a7oax"]
+
+[node name="Nivel 1" type="Node2D"]
+scale = Vector2(1.06222, 1.12183)
+
+[node name="Personaje" parent="." instance=ExtResource("1_ouxkn")]
+position = Vector2(130.5, 88.5)
+scale = Vector2(0.389076, 0.772449)
+
+[node name="Estructuras" type="Node" parent="."]
+
+[node name="Estructuras" parent="Estructuras" instance=ExtResource("2_a7oax")]
+position = Vector2(549, 431)
+scale = Vector2(2.49219, 0.53125)
+
+[node name="Estructuras2" parent="Estructuras" instance=ExtResource("2_a7oax")]
+position = Vector2(185, 328)
+scale = Vector2(2.38281, 0.53125)
+
+[node name="Estructuras3" parent="Estructuras" instance=ExtResource("2_a7oax")]
+position = Vector2(932, 425)
+scale = Vector2(0.968753, 2.875)
+
+[node name="Estructuras4" parent="Estructuras" instance=ExtResource("2_a7oax")]
+position = Vector2(38, 173)
+scale = Vector2(0.39844, 2.42188)
